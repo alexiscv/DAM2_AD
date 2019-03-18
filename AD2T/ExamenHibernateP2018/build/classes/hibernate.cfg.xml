@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        
+        <!-- parametros para la conexion a la base de datos -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost/examenpresencial?serverTimezone=UTC</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">1234</property>
+        <!-- 
+        Configuracion del pool interno 
+        *Nota: Este pool de conexiones es solo para efectos de pruebas 
+        en desarrollo. Cuando nuestra aplicación para a producción se 
+        recomienda usar un pool de conexiones distinto, como C3P0
+        -->
+        <property name="connection.pool_size">1</property>
+        <!-- Dialecto de la base de datos -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!-- Otras propiedades importantes -->
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+        <!--<property name="hibernate.c3p0.timeout">1000</property>-->
+        
+        <!-- Aqui iran los archivos de mapeo -->
+        <mapping class="modelo.Cliente"/>
+        <mapping class="modelo.Cuenta"/>
+        <mapping class="modelo.Movimiento"/>
+        <mapping class="modelo.Sucursal"/>
+        <mapping class="modelo.Direccion"/>
+ 
+    </session-factory>
+</hibernate-configuration>

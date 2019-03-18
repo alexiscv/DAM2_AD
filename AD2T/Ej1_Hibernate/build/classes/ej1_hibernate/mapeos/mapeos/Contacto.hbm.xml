@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    
+    <class name="ej1_hibernate.mapeos.modelo.Contacto" table="CONTACTOS">
+        <id name="id" column="ID">
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string" column="NOMBRE" />
+        <property name="email" />
+        <property name="telefono" />
+    </class>
+    
+</hibernate-mapping>

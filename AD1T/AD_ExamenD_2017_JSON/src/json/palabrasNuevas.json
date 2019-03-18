@@ -1,0 +1,45 @@
+[
+    {
+        "grafia": "String",
+        "definiciones": {
+            "definicion": [
+                "String",
+                "String",
+                "String"
+            ]
+        },
+        "fechaInsercion": "2019-03-15",
+        "sinonimos": {
+            "sinonimo": [
+                {
+                    "grafia": "String",
+                    "porcentajeSimilitud": 3.14159
+                },
+                {
+                    "grafia": "String",
+                    "porcentajeSimilitud": 3.14159
+                },
+                {
+                    "grafia": "String",
+                    "porcentajeSimilitud": 3.14159
+                }
+            ]
+        },
+        "antonimos": {
+            "antonimo": [
+                {
+                    "grafia": "String",
+                    "porcentajeOposicion": 3.14159
+                },
+                {
+                    "grafia": "String",
+                    "porcentajeOposicion": 3.14159
+                },
+                {
+                    "grafia": "String",
+                    "porcentajeOposicion": 3.14159
+                }
+            ]
+        }
+    }
+]
